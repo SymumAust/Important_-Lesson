@@ -1,0 +1,24 @@
+Swap === without taking extra variable
+--------------------------------
+
+Using Arithmetic Operations:
+
+a = a + b
+b = a - b
+a = a - b
+
+
+
+------------------
+taking X-OR
+
+Using Bitwise XOR (^):
+
+a = a ^ b
+b = a ^ b
+a = a ^ b
+
+---> This works because XOR (^) of two same numbers gives 0. So, 
+in the first line, a becomes a ^ b, 
+in the second line, b becomes a ^ b ^ b, which is a, 
+and in the third line, a becomes a ^ b ^ a, which is b.
