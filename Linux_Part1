@@ -1,0 +1,974 @@
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ pwd
+/c/Users/USER
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ echo "hello";
+hello
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ hostname
+LAPTOP-E6A0U6UB
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ whoami
+USER
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ pwd
+/c/Users/USER
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ PycharmProjects/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ eclipse-workspace/
+ firstapp/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ cd root/Videos/
+bash: cd: root/Videos/: No such file or directory
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ cd USER/Videos/
+bash: cd: USER/Videos/: No such file or directory
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ pwd
+/c/Users/USER
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ cd Videos
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~/Videos
+$ pwd
+/c/Users/USER/Videos
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~/Videos
+$ cd
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ pwd
+/c/Users/USER
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ pwd
+/c/Users/USER
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ ../
+bash: ../: Is a directory
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ ..\
+> ..\
+> pwd
+bash: ....pwd: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ ..\
+> cd D
+bash: ..cd: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ pwd
+/c/Users/USER
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ cd /d/
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d
+$ pwd
+/d
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d
+$ ls
+'$RECYCLE.BIN'/   Github/  'System Volume Information'/
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d
+$ mkdir test
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d
+$ ls
+'$RECYCLE.BIN'/   Github/  'System Volume Information'/   test/
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d
+$ cd test
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ touch symum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ vi symum
+hell
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ls
+symum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ cat symum
+ei ei ei
+
+how are you
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ mv symum simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ls
+simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ cat simum
+ei ei ei
+
+how are you
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ grep are simum
+how are you
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ egrep how|you simum
+bash: you: command not found
+ls
+
+
+a
+
+
+[1]+  Stopped                 egrep how | you simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ..\
+> pwd
+bash: ..pwd: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ pwd
+/d/test
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ cat test
+cat: test: No such file or directory
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ls
+simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ cat simum
+ei ei ei
+
+how are you
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ grep "are" simum
+how are you
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ grep "ei" simum
+ei ei ei
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ egrep "ei|are" simum
+ei ei ei
+how are you
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ grep "e" simum
+ei ei ei
+how are you
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ less simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ls -lt
+total 1
+-rw-r--r-- 1 USER 197121 22 Apr  1 01:43 simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ip
+bash: ip: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Unknown adapter Local Area Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::11ce:bb34:f9ea:28f3%12
+   IPv4 Address. . . . . . . . . . . : 192.168.0.103
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.0.1
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ addr
+bash: addr: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Unknown adapter Local Area Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::11ce:bb34:f9ea:28f3%12
+   IPv4 Address. . . . . . . . . . . : 192.168.0.103
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.0.1
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ipaddr
+bash: ipaddr: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ip addr
+bash: ip: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ip addr
+bash: ip: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ip addr
+bash: ip: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ifconfig
+bash: ifconfig: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ifconfig
+bash: ifconfig: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ vi simum
+
+[2]+  Stopped                 vi simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ head -1 simum
+ei ei ei
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ head 1 simum
+head: cannot open '1' for reading: No such file or directory
+==> simum <==
+ei ei ei
+
+how are you
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ tail -1 simum
+how are you
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ ls -la
+total 9
+drwxr-xr-x 1 USER 197121    0 Apr  1 01:53 ./
+drwxr-xr-x 1 USER 197121    0 Apr  1 01:42 ../
+-rw-r--r-- 1 USER 197121 4096 Apr  1 01:53 .simum.swp
+-rw-r--r-- 1 USER 197121   22 Apr  1 01:43 simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ history
+    1  pwd
+    2  echo "hello";
+    3  hostname
+    4  whoami
+    5  pwd
+    6  ls
+    7  cd root/Videos/
+    8  cd USER/Videos/
+    9  pwd
+   10  cd Videos
+   11  pwd
+   12  cd
+   13  pwd
+   14  pwd
+   15  ../
+   16  ....pwd
+   17  ..cd D
+   18  pwd
+   19  cd /d/
+   20  pwd
+   21  ls
+   22  mkdir test
+   23  ls
+   24  cd test
+   25  touch symum
+   26  vi symum
+   27  ls
+   28  cat symum
+   29  mv symum simum
+   30  ls
+   31  cat simum
+   32  grep are simum
+   33  egrep how|you simum
+   34  ..pwd
+   35  pwd
+   36  cat test
+   37  ls
+   38  cat simum
+   39  grep "are" simum
+   40  grep "ei" simum
+   41  egrep "ei|are" simum
+   42  grep "e" simum
+   43  less simum
+   44  ls -lt
+   45  ip
+   46  ipconfig
+   47  addr
+   48  ipconfig
+   49  ipaddr
+   50  ip addr
+   51  ip addr
+   52  ip addr
+   53  ifconfig
+   54  ifconfig
+   55  vi simum
+   56  head -1 simum
+   57  head 1 simum
+   58  tail -1 simum
+   59  ls -la
+   60  history
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ admin
+bash: admin: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ pwd
+/d/test
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ /
+bash: /: Is a directory
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ //
+bash: //: Is a directory
+
+USER@LAPTOP-E6A0U6UB MINGW64 /d/test
+$ cd /
+
+USER@LAPTOP-E6A0U6UB MINGW64 /
+$ pwd
+/
+
+USER@LAPTOP-E6A0U6UB MINGW64 /
+$ cd E
+
+USER@LAPTOP-E6A0U6UB MINGW64 /E
+$ PWD
+/E
+
+USER@LAPTOP-E6A0U6UB MINGW64 /E
+$ cd c
+bash: cd: c: No such file or directory
+
+USER@LAPTOP-E6A0U6UB MINGW64 /E
+$ ls
+'$RECYCLE.BIN'/
+'B-JET CV.pdf'
+ FUSTAAAN/
+ Git/
+'MD.-SYMUM-HOSSAIN .pdf'
+'Md. Symum Hossain.png'
+'New folder'/
+'Pattern Lecture Ria.pdf'
+'Pattern(Tonmoy).pdf'
+'Principal Component Analysis (PCA) with Example - Machine Learning Tutorial - YouTube.mp4'
+'Programming CP'/
+'PyCharm Community Edition 2023.3.2'/
+'System Volume Information'/
+ Thesis/
+ Timedoor/
+ eclipse-jee-2023-06-R-win32-x86_64/
+ eclipse-jee-2023-06-R-win32-x86_64.zip
+
+USER@LAPTOP-E6A0U6UB MINGW64 /E
+$ ls -li
+total 829676
+  281474976710716 drwxr-xr-x 1 USER 197121         0 Oct 22 05:46 '$RECYCLE.BIN'/
+  281474976719097 -rw-r--r-- 1 USER 197121    334202 Mar 26 22:09 'B-JET CV.pdf'
+ 1970324836983012 drwxr-xr-x 1 USER 197121         0 Mar 14 01:22  FUSTAAAN/
+ 1688849860288728 drwxr-xr-x 1 USER 197121         0 Apr  1 01:07  Git/
+  281474976719083 -rw-r--r-- 1 USER 197121    109349 Mar 17 00:59 'MD.-SYMUM-HOSSAIN .pdf'
+  844424930140408 -rw-r--r-- 1 USER 197121     54590 Mar 26 22:23 'Md. Symum Hossain.png'
+  562949953429740 drwxr-xr-x 1 USER 197121         0 Mar 27 23:21 'New folder'/
+30399297484759265 -rw-r--r-- 1 USER 197121  29789676 Apr 15  2023 'Pattern Lecture Ria.pdf'
+  281474976719074 -rw-r--r-- 1 USER 197121  14514345 Apr 15  2023 'Pattern(Tonmoy).pdf'
+  281474976719075 -rw-r--r-- 1 USER 197121 256828010 Apr 15  2023 'Principal Component Analysis (PCA) with Example - Machine Learning Tutorial - YouTube.mp4'
+  281474976719078 drwxr-xr-x 1 USER 197121         0 Mar 16 01:06 'Programming CP'/
+13510798882111532 drwxr-xr-x 1 USER 197121         0 Jan 18 00:56 'PyCharm Community Edition 2023.3.2'/
+  281474976710692 drwxr-xr-x 1 USER 197121         0 Oct 22 06:21 'System Volume Information'/
+  281474976719085 drwxr-xr-x 1 USER 197121         0 Mar 30 13:51  Thesis/
+  281474976719080 drwxr-xr-x 1 USER 197121         0 Mar 31 05:07  Timedoor/
+  562949953429758 drwxr-xr-x 1 USER 197121         0 Mar 30 12:03  eclipse-jee-2023-06-R-win32-x86_64/
+ 1970324836983037 -rw-r--r-- 1 USER 197121 547932670 Aug 24  2023  eclipse-jee-2023-06-R-win32-x86_64.zip
+
+USER@LAPTOP-E6A0U6UB MINGW64 /E
+$ find simum
+find: ‘simum’: No such file or directory
+
+USER@LAPTOP-E6A0U6UB MINGW64 /E
+$ find . -name simum
+find: ‘./System Volume Information’: Permission denied
+
+USER@LAPTOP-E6A0U6UB MINGW64 /E
+$ find ./c -name simum
+find: ‘./c’: No such file or directory
+
+USER@LAPTOP-E6A0U6UB MINGW64 /E
+$ pwd
+/E
+
+USER@LAPTOP-E6A0U6UB MINGW64 /E
+$ cd /
+
+USER@LAPTOP-E6A0U6UB MINGW64 /
+$ pwd
+/
+
+USER@LAPTOP-E6A0U6UB MINGW64 /
+$ find . -name simum
+find: ‘./tmp/msdtadmin’: Permission denied
+find: ‘./tmp/WinSAT’: Permission denied
+
+
+[3]+  Stopped                 find . -name simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /
+$ cd
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ pwd
+/c/Users/USER
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ find . -name simum
+find: ‘./AppData/Local/ElevatedDiagnostics’: Permission denied
+find: ‘./AppData/Local/Microsoft/Windows/INetCache/Low/Content.IE5’: Permission denied
+find: ‘./AppData/Local/Temp/msdtadmin’: Permission denied
+find: ‘./AppData/Local/Temp/WinSAT’: Permission denied
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ PycharmProjects/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ eclipse-workspace/
+ firstapp/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+USER@LAPTOP-E6A0U6UB MINGW64 ~
+$ cd /
+
+USER@LAPTOP-E6A0U6UB MINGW64 /
+$ cd D
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D
+$ PWD
+/D
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D
+$ find . -name simum
+find: ‘./System Volume Information’: Permission denied
+./test/simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D
+$ locate .-name simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D
+$ lz
+bash: lz: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D
+$ ls
+'$RECYCLE.BIN'/   Github/  'System Volume Information'/   test/
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D
+$ wc -l simum
+wc: simum: No such file or directory
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D
+$ cd test
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ ls
+simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ wc -l simum
+3 simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ wc simum
+ 3  6 22 simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ head -1 simum
+ei ei ei
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ head -100 simum
+ei ei ei
+
+how are you
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ wc simum
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ cat simum
+a b c
+d e f
+
+
+
+
+
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ wc simum
+ 7  6 17 simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ wc -w simum
+6 simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ touch sa
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ ls
+sa  simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ diff sa simum
+0a1,7
+> a b c
+> d e f
+>
+>
+>
+>
+>
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ vi sa
+
+[5]+  Stopped                 vi sa
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ cat sa
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ cat sa
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ vi sa
+
+[6]+  Stopped                 vi sa
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ vi sa
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ vi sa.txt
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ cat sa
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ cat sa.txt
+aaaaa
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ diff sa.txt simum.txt
+diff: simum.txt: No such file or directory
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ ls
+sa  sa.txt  simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ diff sa.txt simum
+1c1,7
+< aaaaa
+---
+> a b c
+> d e f
+>
+>
+>
+>
+>
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ diff -w sa.txt simum
+1c1,7
+< aaaaa
+---
+> a b c
+> d e f
+>
+>
+>
+>
+>
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ diff --side-by-side sa.txt simum
+aaaaa                                                         | a b c
+                                                              > d e f
+                                                              >
+                                                              >
+                                                              >
+                                                              >
+                                                              >
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ shred -u sa.swap
+shred: sa.swap: failed to open for writing: No such file or directory
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ ls
+sa  sa.txt  simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ shred -u sa
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ ls
+sa.txt  simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ dmidecode
+bash: dmidecode: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ dmidecod
+bash: dmidecod: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ dmidecode
+bash: dmidecode: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ lscpu
+bash: lscpu: command not found
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ cat sa.txt simum > s
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ ls
+s  sa.txt  simum
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ cat s
+aaaaa
+a b c
+d e f
+
+
+
+
+
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ file s
+s: ASCII text
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ file sa
+sa: cannot open `sa' (No such file or directory)
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ file sa.txt
+sa.txt: ASCII text
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ file simum
+simum: ASCII text
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ cat s | sort
+
+
+
+
+
+a b c
+aaaaa
+d e f
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ sort s
+
+
+
+
+
+a b c
+aaaaa
+d e f
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ history
+    1  pwd
+    2  echo "hello";
+    3  hostname
+    4  whoami
+    5  pwd
+    6  ls
+    7  cd root/Videos/
+    8  cd USER/Videos/
+    9  pwd
+   10  cd Videos
+   11  pwd
+   12  cd
+   13  pwd
+   14  pwd
+   15  ../
+   16  ....pwd
+   17  ..cd D
+   18  pwd
+   19  cd /d/
+   20  pwd
+   21  ls
+   22  mkdir test
+   23  ls
+   24  cd test
+   25  touch symum
+   26  vi symum
+   27  ls
+   28  cat symum
+   29  mv symum simum
+   30  ls
+   31  cat simum
+   32  grep are simum
+   33  egrep how|you simum
+   34  ..pwd
+   35  pwd
+   36  cat test
+   37  ls
+   38  cat simum
+   39  grep "are" simum
+   40  grep "ei" simum
+   41  egrep "ei|are" simum
+   42  grep "e" simum
+   43  less simum
+   44  ls -lt
+   45  ip
+   46  ipconfig
+   47  addr
+   48  ipconfig
+   49  ipaddr
+   50  ip addr
+   51  ip addr
+   52  ip addr
+   53  ifconfig
+   54  ifconfig
+   55  vi simum
+   56  head -1 simum
+   57  head 1 simum
+   58  tail -1 simum
+   59  ls -la
+   60  history
+   61  admin
+   62  pwd
+   63  /
+   64  //
+   65  cd /
+   66  pwd
+   67  cd E
+   68  PWD
+   69  cd c
+   70  ls
+   71  ls -li
+   72  find simum
+   73  find . -name simum
+   74  find ./c -name simum
+   75  pwd
+   76  cd /
+   77  pwd
+   78  find . -name simum
+   79  cd
+   80  pwd
+   81  find . -name simum
+   82  ls
+   83  cd /
+   84  cd D
+   85  PWD
+   86  find . -name simum
+   87  locate .-name simum
+   88  lz
+   89  ls
+   90  wc -l simum
+   91  cd test
+   92  ls
+   93  wc -l simum
+   94  wc simum
+   95  head -1 simum
+   96  head -100 simum
+   97  wc simum
+   98  vi simum
+   99  nano simum
+  100  cat simum
+  101  wc simum
+  102  wc -w simum
+  103  touch sa
+  104  ls
+  105  diff sa simum
+  106  vi sa
+  107  cat sa
+  108  cat sa
+  109  vi sa
+  110  vi sa
+  111  vi sa.txt
+  112  cat sa
+  113  cat sa.txt
+  114  diff sa.txt simum.txt
+  115  ls
+  116  diff sa.txt simum
+  117  diff -w sa.txt simum
+  118  diff --side-by-side sa.txt simum
+  119  shred -u sa.swap
+  120  ls
+  121  shred -u sa
+  122  ls
+  123  dmidecode
+  124  dmidecod
+  125  dmidecode
+  126  lscpu
+  127  cat sa.txt simum > s
+  128  ls
+  129  cat s
+  130  file s
+  131  file sa
+  132  file sa.txt
+  133  file simum
+  134  cat s | sort
+  135  sort s
+  136  history
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$ history^C
+
+USER@LAPTOP-E6A0U6UB MINGW64 /D/test
+$
